@@ -1,6 +1,9 @@
 * GooDocPayment
 
-Input daily payment to google docs using Command line
+Update daily payment to google docs using command line
+
+This program use "gspread" API.
+(source : https://github.com/burnash/gspread)
 
 ** Usage
 
