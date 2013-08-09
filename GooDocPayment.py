@@ -16,9 +16,9 @@ cmdargs = str(sys.argv)
 
 # User input
 account_input = raw_input('your account: ')
-input = raw_input('your password: ')
+password_input = raw_input('your password: ')
 
-gc = gspread.login(account_input, input)
+gc = gspread.login(account_input, password_input)
 
 sht1 = gc.open_by_key('0Al7r6sbzIbfsdGhTcEJ1SEpkZnVMTTBJc0JVYlc5NVE')
 
