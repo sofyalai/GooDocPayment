@@ -12,7 +12,7 @@ total = len(sys.argv)
 def remove_row ():
     answer = raw_input("Are you sure you want to remove the last row from the spreadsheet? (y/n) ")
     if answer == 'y':
-        worksheet.resize(len(values_list) - 1)
+        worksheet.resize(row_count - 1)
     print "Removed last row from spreadsheet."
     
 def open_in_web_browser ():
@@ -88,9 +88,9 @@ def fetch_balance():
     val = round(float(val),2)
     
     if val>0 :
-        print ("Y owes :%f kr" % val)
+        print ("Y owes :%.2f kr" % val)
     else:
-        print ("F owes :%f kr" % abs(val))
+        print ("F owes :%.2f kr" % abs(val))
 
 # User input
 account_input = raw_input('your account: ')
@@ -103,6 +103,6 @@ sht1 = gc.open_by_key('0Al7r6sbzIbfsdGhTcEJ1SEpkZnVMTTBJc0JVYlc5NVE')
 worksheet = sht1.sheet1
 
 # fetch values of the 1st colum
-values_list = worksheet.col_values(1)
+row_count = worksheet.row_count
 
 get_args(sys.argv)

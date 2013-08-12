@@ -8,5 +8,6 @@ This program use "gspread" API.
 ** Usage
 
 ** Todo:
-*** "Comment" Function
+- add "Comment" Function
+- create a new worksheet for every month
 
