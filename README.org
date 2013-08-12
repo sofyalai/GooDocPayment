@@ -7,3 +7,6 @@ This program use "gspread" API.
 
 ** Usage
 
+** Todo:
+*** "Comment" Function
+
