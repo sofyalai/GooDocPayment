@@ -70,7 +70,7 @@ def update_Data (name, value, date):
         col = 3
 
     # assign row
-    row = len(values_list) + 1
+    row = row_count + 1
 
     # insert 1 row
     worksheet.add_rows(1)
