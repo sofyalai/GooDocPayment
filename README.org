@@ -11,3 +11,6 @@ This program use "gspread" API.
 - add "Comment" Function
 - create a new worksheet for every month
 
+** Pre-Installation:
++ apt-get install python-pip
++ pip install gspread
